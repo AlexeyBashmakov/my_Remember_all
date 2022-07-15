@@ -1,0 +1,78 @@
+@font-face
+{
+	font-family: "3Dumb";
+	src: url("3Dumb.ttf");
+	/* .ttf должен лежать в папке с html (?) - пока так работает */
+	/* при работе с flask положил в static и заработало */
+}
+
+@font-face
+{
+	font-family: "2Dumb";
+	src: url("2Dumb.ttf");
+	/* .ttf должен лежать в папке с html (?) - пока так работает */
+}
+
+body
+{
+	background-color: #000000;
+    font-family: Verdana, Geneva, Arial, san-serif;
+	/* Verdana доступен на большинстве ПК, Geneva доступен на большинстве Mac,
+       Arial - и на тех и на других	*/
+	font-size: medium;
+	color: silver;
+}
+
+table
+{
+	border-spacing: 10px; /* расстояние между ячейками таблицы */
+}
+
+td
+{
+	padding: 10px; /* отступ от содержимого ячейки до её границы */
+	border-radius: 10px; /* радиус границы ячейки */
+	font-size: 130%;
+}
+
+.name_questions /* класс названий курсов */
+{
+	border: 2px solid silver;
+	background-color: #006600;
+	color: #00cccc;
+	font-family: "Comic Sans", "Apple Chancery", cursive;
+}
+
+.counts_questions /* класс количества вопросов в курсах */
+{
+	font-family: "2Dumb";
+}
+
+.btn /* класс кнопок на стартовом экране */
+{
+	font-family: "Comic Sans", "Apple Chancery", cursive;
+	/*font-family: "Times New Roman", serif;*/
+	font-style: italic;
+	/*font-weight: bold;*/
+	background-color: #aa44aa;
+	color: #0000bb;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 130%;
+}
+
+.btn:hover /* изменение кнопки при наведении мышки */
+{
+	background-color: #993399;
+}
+
+.one_question /* класс вопроса */
+{
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 130%;
+	border: 2px solid silver;
+	background-color: #006600;
+	color: #00cccc;
+	font-family: "Comic Sans", "Apple Chancery", cursive;
+}
