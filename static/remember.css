@@ -11,6 +11,31 @@
 	font-family: "2Dumb";
 	src: url("2Dumb.ttf");
 	/* .ttf должен лежать в папке с html (?) - пока так работает */
+	/* при работе с flask положил в static и заработало */
+}
+
+@font-face
+{
+	font-family: "Cassandra";
+	src: url("Cassandra.ttf");
+	/* .ttf должен лежать в папке с html (?) - пока так работает */
+	/* при работе с flask положил в static и заработало */
+}
+
+@font-face
+{
+	font-family: "comic";
+	src: url("comic.ttf");
+	/* .ttf должен лежать в папке с html (?) - пока так работает */
+	/* при работе с flask положил в static и заработало */
+}
+
+@font-face
+{
+	font-family: "Brushtype semibold italic regular";
+	src: url("Brushtype semibold italic regular.ttf");
+	/* .ttf должен лежать в папке с html (?) - пока так работает */
+	/* при работе с flask положил в static и заработало */
 }
 
 body
@@ -35,23 +60,17 @@ td
 	font-size: 130%;
 }
 
-.name_questions /* класс названий курсов */
+a
 {
-	border: 2px solid silver;
-	background-color: #006600;
-	color: #00cccc;
-	font-family: "Comic Sans", "Apple Chancery", cursive;
-}
-
-.counts_questions /* класс количества вопросов в курсах */
-{
-	font-family: "2Dumb";
+	color: #ff8888;
 }
 
 .btn /* класс кнопок на стартовом экране */
 {
-	font-family: "Comic Sans", "Apple Chancery", cursive;
+	/*font-family: "Comic Sans", "Apple Chancery", cursive;*/
 	/*font-family: "Times New Roman", serif;*/
+	/*font-family: "Brushtype semibold italic regular", cursive;*/
+	font-family: "comic";
 	font-style: italic;
 	/*font-weight: bold;*/
 	background-color: #aa44aa;
@@ -66,13 +85,46 @@ td
 	background-color: #993399;
 }
 
+.questions
+{
+	border: 2px solid silver;
+	background-color: #006600;
+	color: #00cccc;
+}
+
+.counts_questions /* класс количества вопросов в курсах */
+{
+	font-family: "2Dumb";
+}
+
+.name_questions /* класс названий курсов */
+{
+	font-family: "comic";
+}
+
 .one_question /* класс вопроса */
 {
 	padding: 10px;
 	border-radius: 10px;
 	font-size: 130%;
 	border: 2px solid silver;
-	background-color: #006600;
-	color: #00cccc;
-	font-family: "Comic Sans", "Apple Chancery", cursive;
+	background-color: #aa44aa;
+	color: #0000bb;
+	font-family: "comic";
+}
+
+::placeholder
+{
+	font-family: "comic";
+	color: rgb(36, 248, 117);
+}
+
+input.edit
+{
+	font-style: italic;
+	background-color: #aa44aa;
+	color: #0000bb;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 130%;
 }
