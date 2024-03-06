@@ -1,15 +1,12 @@
 {% extends 'base.html' %}
-
 {% block body %}
 
-    К <a href="./remember">курсам</a><br>
+К <a href="./mem">курсам</a><br>
 
-    <p><span class='one_question'>{{ the_question }}</span></p>
+<p><span class='one_question'>{{ the_question }}</span></p>
 
-    <form method='POST' action='/question'>
-    
-        <input class='btn' name='next' type='SUBMIT' value='Следующий вопрос'>
-    
-	</form>
+<form method='POST' action='/question'>
+    <input class='btn' name='next' type='SUBMIT' value='Следующий вопрос'>
+</form>
 
 {% endblock %}
